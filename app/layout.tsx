@@ -10,8 +10,8 @@ import { MobileNav } from '@/components/mobile-nav'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next.js Template',
-  description: 'A customizable template built with Next.js and Tailwind CSS',
+  title: 'PureFlow Water Filters',
+  description: 'Premium water filtration systems for homes and businesses',
   icons: {
     icon: '/favicon.ico',
   },
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       {/* If inter.className is removed, we cannot leave empty brackets as className, it will throw an error */}
-      <body className={`${inter.className} h-full flex flex-col antialiased`}>
+      <body className={}>
         <ThemeProvider defaultTheme="light" attribute="class">
           {/* 
             TEMPLATE SECTION: Header
@@ -40,16 +40,17 @@ export default function RootLayout({
                   Remember to update the mobile navigation in the mobile-nav.tsx file
                 */}
                 {/* <MobileNav /> */}
-                <div className="font-semibold">Template Logo</div>
+                <div className="font-semibold text-blue-600">PureFlow Water Filters</div>
               </div>
-              {/* <nav className="hidden md:flex gap-6">
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 1</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 2</a>
-                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Link 3</a>
-              </nav> */}
+              <nav className="hidden md:flex gap-6">
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Products</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Benefits</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Testimonials</a>
+                <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              </nav>
               <div className="flex items-center gap-2">
                 <ThemeToggle />
-                <Button variant="outline" size="sm">Template Button</Button>
+                <Button variant="outline" size="sm">Get a Quote</Button>
               </div>
             </div>
           </header>
@@ -112,7 +113,7 @@ export default function RootLayout({
 
               <div className="mt-8 pt-4 text-center">
                 <p className="text-sm text-muted-foreground">
-                  © 2024 Template Brand. All rights reserved.
+                  © 2024 PureFlow Water Filters. All rights reserved.
                 </p>
               </div>
             </div>
@@ -123,3 +124,5 @@ export default function RootLayout({
     </html>
   )
 }
+
+
