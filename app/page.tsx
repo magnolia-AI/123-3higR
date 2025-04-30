@@ -39,7 +39,7 @@ export default function Home() {
             </p>
             <div className="mt-12 flex gap-4 justify-center">
               <Button size="lg" className="px-8 bg-blue-600 hover:bg-blue-700">Shop Filters</Button>
-              <Button size="lg" variant="outline" className="px-8 text-white border-white hover:bg-white/10" onClick={showQuoteToast}>
+              <Button size="lg" variant="outline" className="px-8 text-white border-white hover:bg-white/10 bg-black/30" onClick={showQuoteToast}>
                 Get a Free Quote
               </Button>
             </div>
@@ -213,3 +213,4 @@ export default function Home() {
     </div>
   )
 }
+
