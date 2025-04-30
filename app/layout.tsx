@@ -7,8 +7,6 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { MobileNav } from '@/components/mobile-nav'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
   title: 'PureFlow Water Filters',
   description: 'Premium water filtration systems for homes and businesses',
@@ -22,8 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
-      {/* If inter.className is removed, we cannot leave empty brackets as className, it will throw an error */}
-      <body className={}>
+      <body>
         <ThemeProvider defaultTheme="light" attribute="class">
           {/* 
             TEMPLATE SECTION: Header
